@@ -1,13 +1,16 @@
 #!/bin/bash
 
-read -p "Enter the file or directory to compress: " source
-read -p "Enter the output compressed filename (.tar.gz): " output
-if [ -e "$source" ]; then
-    tar -czvf "$output" "$source"
+echo -n "File or folder to compress: " # Without new line
+read src  # Store the input into variable src
+
+echo -n "Output filename (.zip): " # Without new line
+read out  # Store the input into variable out
+
+if [ -e "$src" ]; then # Check if the source file or folder exists
+    zip -r "$out" "$src"  # Compress the file or folder into a .zip archive
     echo "Compression completed successfully!"
 else
-    echo "Error: $source does not exist"
+    echo "Error: '$src' does not exist!"
 fi
-
 
 
