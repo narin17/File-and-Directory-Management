@@ -7,7 +7,8 @@ found_files=$(find . -type f -name "$search_pattern")
 
 if [ -n "$found_files" ]; then
     echo "File found at:"
-    for file in $found_files; do
+    for file in $found_files; 
+    do
         realpath "$file"
     done
 else
