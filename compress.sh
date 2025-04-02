@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo -n "File or folder to compress: " # Without new line
+echo -n "File or folder to compress: " # Without new linee
 read src  # Store the input into variable src
 
 echo -n "Output filename (.zip): " # Without new line
