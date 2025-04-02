@@ -1,7 +1,9 @@
 #!/bin/bash
 
-read -p "Enter the file or directory to backup: " source
-read -p "Enter the backup location: " dest
+echo -n "Enter the file or directory to backup: " 
+read source
+echo -n "Enter the backup location: " 
+read dest
 if [ -e "$source" ]; then
     cp -r "$source" "$dest"
     echo "Backup created successfully!"
