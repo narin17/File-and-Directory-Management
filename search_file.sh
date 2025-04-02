@@ -1,10 +1,16 @@
 #!/bin/bash
 
-read -p "Enter the directory path: " dir
-read -p "Enter the file name or extension to search: " pattern
-if [ -d "$dir" ]; then
-    find "$dir" -type f -name "$pattern"
+echo -n "Enter the file name or extension to search: " 
+read search_pattern
+
+found_files=$(find . -type f -name "$search_pattern")
+
+if [ -n "$found_files" ]; then
+    echo "File found at:"
+    for file in $found_files; do
+        realpath "$file"
+    done
 else
-    echo "Error: $dir is not a valid directory"
+    echo "No file matching '$search_pattern' found."
 fi
 

@@ -1,8 +1,9 @@
 #!/bin/bash
 
-read -p "Enter the directory or file path: " path
+echo -n "Enter the directory or file path: " 
+read path
 if [ -e "$path" ]; then
-    ls -lh "$path"
+    ls "$path"
 else
     echo "Error: $path does not exist"
 fi
