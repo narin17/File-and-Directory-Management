@@ -1,111 +1,162 @@
-## **Operating System-Project: File-and-Directory-Management**  
+# **Operating System Project: File and Directory Management System**  
 
-### **📌 Overview**  
-This project is a **File and Directory Management Program** that provides essential file management functionalities, including listing, searching, compressing, and monitoring disk usage. It also logs all actions performed into a log file.  
+## **📌 Overview**  
+The **File and Directory Management System** is a shell-based utility that provides essential file management functionalities. It allows users to list, search, backup, compress, count files, and check disk usage efficiently.  
+
+This project logs all operations performed, making it easy to track actions.  
 
 ---
 
 ## **📂 Features**  
-- `list.sh` - Lists files and subdirectories with details.  
-- `backup.sh` - Creates backups of individual files or entire directories.  
-- `count_files.sh` - Counts the number of files in a given directory.  
-- `disk_usage.sh` - Displays the disk usage of a given directory.  
-- `search.sh` - Searches for a file by name or extension in a directory.  
-- `compress.sh` - Compresses specified files or directories.  
-- **Logging** - All actions are logged in `script.log`.  
+- **List Files & Directories** (`list_files.sh`) - View files and subdirectories with details.  
+- **Backup** (`backup.sh`) - Create backups of files or directories.  
+- **Count Files** (`count_files.sh`) - Count the number of files in a directory.  
+- **Disk Usage** (`disk_usage.sh`) - Display storage usage of a directory.  
+- **Search Files** (`search_files.sh`) - Locate files by name or extension.  
+- **Compression** (`compress.sh`) - Compress files or directories.  
+- **Logging** (`log.sh`) - Records all performed operations into `history.log`.  
 
 ---
 
-## **🚀 Installation & Setup**  
+## **🛠 Getting Started**  
 
-### **Step 1: Clone the Repository**  
+### **📌 Dependencies**  
+Ensure you have the following installed before running the program:  
+✅ Linux (Ubuntu, Debian, macOS, or any Unix-based OS)  
+✅ Bash Shell  
+
+---
+
+### **📥 Installation**  
+
+#### **1️⃣ Clone the Repository**  
 ```bash
-git clone https://github.com/narin17/File-and-Directory-Management
-cd File-and-Directory-Management
+git clone https://github.com/YourUsername/File-Directory-Management.git
+cd File-Directory-Management
 ```
 
-### **Step 2: Set Execution Permissions**  
-Navigate to the project directory and grant execution permissions to all scripts:  
+#### **2️⃣ Set Execution Permissions**  
 ```bash
 chmod +x *.sh
 ```
 
-### **Step 3: Run the Program**  
+#### **3️⃣ Run the Program**  
 ```bash
 ./main.sh
 ```
 
-### **Step 4: View Log Actions**  
+#### **4️⃣ View Logged Actions**  
 To check all logged actions:  
 ```bash
-chmod 666 script.log
-cat script.log
+cat history.log
 ```
 
 ---
 
-## **🔧 Usage Examples**  
+## **🎯 How to Use**  
 
-### **1️⃣ Listing Files and Directories**  
+### **1️⃣ List Files & Directories**  
 ```bash
-./list.sh
+./list_files.sh
 ```
-Displays a detailed overview of files and subdirectories.  
+📝 Displays files and folders in a readable format.  
 
-### **2️⃣ Creating a Backup**  
+### **2️⃣ Create a Backup**  
 ```bash
-./backup.sh /path/to/file_or_directory
+./backup.sh
 ```
-Creates a backup of the specified file or directory.  
+📝 Prompts the user for a file/directory and backup location, then copies the data.  
 
-### **3️⃣ Counting Files in a Directory**  
+### **3️⃣ Count Files in a Directory**  
 ```bash
-./count_files.sh /path/to/directory
+./count_files.sh
 ```
-Counts the number of files in a given directory.  
+📝 Calculates the number of files inside a directory.  
 
-### **4️⃣ Checking Disk Usage**  
+### **4️⃣ Check Disk Usage**  
 ```bash
-./disk_usage.sh /path/to/directory
+./disk_usage.sh
 ```
-Displays disk usage statistics for a directory.  
+📝 Displays how much space a directory occupies.  
 
-### **5️⃣ Searching for a File**  
+### **5️⃣ Search for a File**  
 ```bash
-./search.sh filename /path/to/directory
+./search_files.sh
 ```
-Searches for a file by name or extension within a directory.  
+📝 Locates files based on names or extensions.  
 
-### **6️⃣ Compressing Files or Directories**  
+### **6️⃣ Compress Files or Directories**  
 ```bash
-./compress.sh /path/to/file_or_directory
+./compress.sh
 ```
-Compresses files or directories into a `.tar.gz` archive.  
+📝 Compresses selected files or folders into a `.tar.gz` archive.  
 
 ---
 
-## **📜 Logging**  
-- Every operation performed by the scripts is logged into `script.log`.  
-- Logs include timestamps and details of each action.  
+## **📁 Project Structure**  
+
+```
+File-Directory-Management/
+│── backup.sh          # Backup files or directories  
+│── compress.sh        # Compress files or directories  
+│── count_files.sh     # Count the number of files  
+│── disk_usage.sh      # Check disk usage of a directory  
+│── list_files.sh      # List files and directories  
+│── log.sh             # Logging functionality  
+│── main.sh            # Main program with menu options  
+│── search_files.sh    # Search files by name or extension  
+│── history.log        # Log file storing all actions  
+```
 
 ---
 
-## **💡 Future Improvements**  
-- Add a **restore** feature for deleted files.  
-- Implement a **GUI** version for better user interaction.  
-- Improve error handling and user prompts.  
+## **❓ Help & Troubleshooting**  
+
+💡 **Common Issues & Fixes**  
+
+1️⃣ **Permission Denied?**  
+🔹 Run:  
+```bash
+chmod +x *.sh
+```
+🔹 Then retry running the script.  
+
+2️⃣ **Command Not Found?**  
+🔹 Ensure you are in the correct directory:  
+```bash
+cd /path/to/File-Directory-Management
+```
+
+3️⃣ **Errors in Searching Files?**  
+🔹 Use `*` for wildcards, e.g., to find `.txt` files:  
+```bash
+./search_files.sh "*.txt"
+```
 
 ---
 
-## **👥 Contributors**  
-- **Your Name** - *Developer*  
-- **[Add your team members here]*  
+## **👨‍💻 Authors**  
+
+- **Your Name** – [GitHub Profile](https://github.com/YourUsername)  
+- **Team Member 1** – [GitHub Profile](https://github.com/TeamMember1)  
+- **Team Member 2** – [GitHub Profile](https://github.com/TeamMember2)  
 
 ---
 
-## **📄 License**  
-This project is open-source and licensed under the **MIT License**.  
+## **📜 Version History**  
+
+🔹 **v1.0** (April 2025)  
+- Initial release  
+- Implemented file listing, searching, and backup features  
+- Added compression and logging functionality  
 
 ---
 
-This README follows **best practices** and looks professional. Let me know if you want any modifications! 🚀
+## **📌 Acknowledgments**  
+Special thanks to the following resources:  
+- [Bash Scripting Guide](https://tldp.org/LDP/abs/html/)  
+- [GNU Tar Documentation](https://www.gnu.org/software/tar/manual/tar.html)  
+
+---
+
+This README is structured, clean, and easy to follow. Let me know if you need modifications! 🚀😃
