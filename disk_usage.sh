@@ -1,15 +1,17 @@
 #!/bin/bash
 
-# Ask the user to type a folder path
-echo "Enter the directory path to check disk usage:"
-read dir
+LOG_FILE="script.log"
 
-# Check if the user entered a real folder
+log_action() {
+    echo "$(date '+%Y-%m-%d %H:%M:%S') - $1" >> "$LOG_FILE"
+}
+
+read -p "Enter directory path: " dir
+
 if [ -d "$dir" ]; then
-    # If it's a valid folder, show how much space is used on the disk where it’s stored
-    echo "Disk usage for the file system containing '$dir':"
     df -h "$dir"
+    log_action "Checked disk usage for $dir"
 else
-    # If the folder doesn't exist, let the user know it's invalid
-    echo "Error: '$dir' is not a valid directory."
+    echo "Error: $dir is not a valid directory."
+    log_action "Failed to check disk usage for $dir: Directory does not exist."
 fi
