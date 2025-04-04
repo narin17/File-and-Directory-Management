@@ -1,4 +1,5 @@
 #!/bin/bash
+source ./log.sh
 
 echo -n "Enter the directory path: "
 read dir
