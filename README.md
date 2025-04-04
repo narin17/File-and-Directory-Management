@@ -32,7 +32,7 @@ Ensure you have the following installed before running the program:
 
 #### **1️⃣ Clone the Repository**  
 ```bash
-git clone https://github.com/YourUsername/File-Directory-Management.git
+git clone https://github.com/narin17/File-and-Directory-Management
 cd File-Directory-Management
 ```
 
@@ -166,5 +166,3 @@ Special thanks to the following resources:
 
 ---
 
-✅ **Now, history.log is properly included inside the Features section!** 🚀  
-Let me know if you need more refinements! 😊
