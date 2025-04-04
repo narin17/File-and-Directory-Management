@@ -1,16 +1,16 @@
 #!/bin/bash
+source ./log.sh
+echo -n "File or folder to compress: " 
+read src 
 
-echo -n "File or folder to compress: " # Without new linee
-read src  # Store the input into variable src
+echo -n "Output filename (.zip): "
+read out  
 
-echo -n "Output filename (.zip): " # Without new line
-read out  # Store the input into variable out
-
-if [ -e "$src" ]; then # Check if the source file or folder exists
-    zip -r "$out" "$src"  # Compress the file or folder into a .zip archive
+if [ -e "$src" ]; then 
+    tar -czf "$out.tar.gz" "$src"
     echo "Compression completed successfully!"
+    log "Compressed '$src' into '$out.tar.gz'"
 else
     echo "Error: '$src' does not exist!"
+    log "Failed to compress '$src': Source does not exist."
 fi
-
-
