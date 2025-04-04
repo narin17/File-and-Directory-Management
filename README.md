@@ -12,7 +12,7 @@ This project logs all operations performed, making it easy to track actions.
 - **Backup** (`backup.sh`) - Create backups of files or directories.  
 - **Count Files** (`count_files.sh`) - Count the number of files in a directory.  
 - **Disk Usage** (`disk_usage.sh`) - Display storage usage of a directory.  
-- **Search Files** (`search_files.sh`) - Locate files by name or extension.  
+- **Search Files** (`search_file.sh`) - Locate files by name or extension.  
 - **Compression** (`compress.sh`) - Compress files or directories.  
 - **Logging** (`log.sh`) - Records all performed operations into `history.log`.  
 - **View Logs** (`history.log`) - Stores all actions performed in the system for tracking and debugging.  
@@ -82,7 +82,7 @@ cat history.log
 
 ### **5️⃣ Search for a File**  
 ```bash
-./search_files.sh
+./search_file.sh
 ```
 📝 Locates files based on names or extensions.  
 
@@ -111,7 +111,7 @@ File-Directory-Management/
 │── list_files.sh      # List files and directories  
 │── log.sh             # Logging functionality  
 │── main.sh            # Main program with menu options  
-│── search_files.sh    # Search files by name or extension  
+│── search_file.sh     # Search files by name or extension  
 │── history.log        # Log file storing all actions  
 ```
 
@@ -137,7 +137,7 @@ cd /path/to/File-Directory-Management
 3️⃣ **Errors in Searching Files?**  
 🔹 Use `*` for wildcards, e.g., to find `.txt` files:  
 ```bash
-./search_files.sh "*.txt"
+./search_file.sh "*.txt"
 ```
 
 ---
@@ -167,4 +167,3 @@ Special thanks to the following resources:
 - [GNU Tar Documentation](https://www.gnu.org/software/tar/manual/tar.html)  
 
 ---
-
