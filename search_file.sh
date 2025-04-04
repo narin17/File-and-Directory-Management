@@ -1,4 +1,5 @@
 #!/bin/bash
+source ./log.sh
 
 echo -n "Enter the file name or extension to search: " 
 read search_pattern

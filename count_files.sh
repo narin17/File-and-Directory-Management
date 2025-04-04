@@ -1,4 +1,5 @@
 #!/bin/bash
+source ./log.sh
 
 # Ask the User to input path 
 echo -n "Enter the directory path: "
@@ -12,5 +13,3 @@ if [ -d "$dir" ]; then
 else
     echo "Error: $dir is not a valid directory"
 fi
-
-

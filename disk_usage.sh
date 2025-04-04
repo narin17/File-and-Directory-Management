@@ -1,4 +1,5 @@
 #!/bin/bash
+source ./log.sh
 
 # Ask the user to type a folder path
 echo "Enter the directory path to check disk usage:"

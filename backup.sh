@@ -1,4 +1,5 @@
 #!/bin/bash
+source ./log.sh
 
 echo -n "Enter the file or directory to backup: " 
 read source
