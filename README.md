@@ -142,13 +142,13 @@ cd /path/to/File-Directory-Management
 
 ---
 
-## **👨‍💻 Authors**  
+## **👨‍💻 Team Members**  
 
-- ** Leng Sokpunleu ** 
-- ** Lean Sokkong **
-- ** Lim Panha **
-- ** Khorn Vannda **
-- ** Un Tithnarin **
+- **Leng Sokpunleu**  
+- **Lean Sokkong**  
+- **Lim Panha**  
+- **Khorn Vannda**  
+- **Un Tithnarin**
 
 ---
 
