@@ -20,8 +20,8 @@ This project is a **File and Directory Management Program** that provides essent
 
 ### **Step 1: Clone the Repository**  
 ```bash
-git clone https://github.com/YourUsername/Mini-Project-File-and-Directory-Management.git
-cd Mini-Project-File-and-Directory-Management
+git clone https://github.com/narin17/File-and-Directory-Management
+cd File-and-Directory-Management
 ```
 
 ### **Step 2: Set Execution Permissions**  
