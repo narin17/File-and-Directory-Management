@@ -144,9 +144,11 @@ cd /path/to/File-Directory-Management
 
 ## **👨‍💻 Authors**  
 
-- **Your Name** – [GitHub Profile](https://github.com/YourUsername)  
-- **Team Member 1** – [GitHub Profile](https://github.com/TeamMember1)  
-- **Team Member 2** – [GitHub Profile](https://github.com/TeamMember2)  
+- ** Leng Sokpunleu ** 
+- ** Lean Sokkong **
+- ** Lim Panha **
+- ** Khorn Vannda **
+- ** Un Tithnarin **
 
 ---
 
