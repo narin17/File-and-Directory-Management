@@ -1,4 +1,4 @@
-## **Mini-Project: File and Directory Management Program**  
+## **Operating System-Project: File-and-Directory-Management**  
 
 ### **📌 Overview**  
 This project is a **File and Directory Management Program** that provides essential file management functionalities, including listing, searching, compressing, and monitoring disk usage. It also logs all actions performed into a log file.  
