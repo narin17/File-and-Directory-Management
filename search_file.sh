@@ -1,5 +1,6 @@
 #!/bin/bash
 
+source ./log.sh
 echo -n "Enter the file name or extension to search: " 
 read search_pattern
 
@@ -13,5 +14,6 @@ if [ -n "$found_files" ]; then
     done
 else
     echo "No file matching '$search_pattern' found."
+    log "Failed to search '$search_pattern': Source does not exist."
 fi
 
