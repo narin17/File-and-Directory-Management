@@ -1,4 +1,4 @@
-# **Operating System Project: File and Directory Management System**  
+# **File and Directory Management System**  
 
 ## **📌 Overview**  
 The **File and Directory Management System** is a shell-based utility that provides essential file management functionalities. It allows users to list, search, backup, compress, count files, and check disk usage efficiently.  
@@ -15,6 +15,7 @@ This project logs all operations performed, making it easy to track actions.
 - **Search Files** (`search_files.sh`) - Locate files by name or extension.  
 - **Compression** (`compress.sh`) - Compress files or directories.  
 - **Logging** (`log.sh`) - Records all performed operations into `history.log`.  
+- **View Logs** (`history.log`) - Stores all actions performed in the system for tracking and debugging.  
 
 ---
 
@@ -91,6 +92,12 @@ cat history.log
 ```
 📝 Compresses selected files or folders into a `.tar.gz` archive.  
 
+### **7️⃣ View Log History**  
+```bash
+cat history.log
+```
+📝 Displays all previously logged operations.  
+
 ---
 
 ## **📁 Project Structure**  
@@ -159,4 +166,5 @@ Special thanks to the following resources:
 
 ---
 
-This README is structured, clean, and easy to follow. Let me know if you need modifications! 🚀😃
+✅ **Now, history.log is properly included inside the Features section!** 🚀  
+Let me know if you need more refinements! 😊
