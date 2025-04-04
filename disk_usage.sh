@@ -9,7 +9,7 @@ log_action() {
 read -p "Enter directory path: " dir
 
 if [ -d "$dir" ]; then
-    df -h "$dir"
+    du -sh "$dir"
     log_action "Checked disk usage for $dir"
 else
     echo "Error: $dir is not a valid directory."
