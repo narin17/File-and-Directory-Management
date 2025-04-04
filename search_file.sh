@@ -3,18 +3,25 @@
 source ./log.sh
 echo -n "Enter the file name or extension to search: " 
 read search_pattern
+echo -n "Enter the directory or file path: " 
+read path
 
-found_files=$(find . -type f -name "$search_pattern")
+if [ -e "$path" ]; then
+    found_files=$(find "$path" -type f -name "$search_pattern")
 
-if [ -n "$found_files" ]; then
-    echo "Files found:"
-    for file in $found_files; 
-    do
-
-        echo "${file#./}"
-    done
+    if [ -n "$found_files" ]; then
+        echo "Files found:"
+        for file in $found_files; 
+        do
+            echo "${file#./}"
+        done
+    else
+        echo "No files found."
+        log "Failed to search '$search_pattern': No matching files found."
+    fi
 else
-    echo "No files found."
-    log "Failed to search '$search_pattern': Source does not exist."
+    echo "Error: $path does not exist"
+    log "Failed to list '$path': Source does not exist."
 fi
+
 
